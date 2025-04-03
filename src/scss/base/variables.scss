@@ -1,0 +1,51 @@
+// media queries
+
+$XS: "(min-width: 375px)";
+$S: "(min-width: 480px)";
+$M: "(min-width: 720px)";
+$L: "(min-width: 960px)";
+$XL: "(min-width: 1200px)";
+$XXL: "(min-width: 1440px)";
+$XXXL: "(min-width: 1920px)";
+
+$mobile_only: "(min-width: 320px) and (max-width: 719px)";
+$desktop_only: "(min-width: 1200px) and (max-width: 1919px)";
+
+
+// colors
+
+$dixel-blue: #251B4C;
+$dixel-light-blue: #EBF4FF;
+$dixel-orange: #EC5532;
+
+@media ($desktop_only) {
+
+}
+
+@media ($mobile_only) {
+
+}
+
+@media ($S) {
+
+}
+
+@media ($M) {
+
+}
+
+@media ($L) {
+
+}
+
+@media ($XL) {
+
+}
+
+@media ($XXL) {
+
+}
+
+@media ($XXXL) {
+
+}

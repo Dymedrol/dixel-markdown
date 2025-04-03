@@ -1,0 +1,159 @@
+.dixel-jumbo {
+  position: relative;
+  height: calc(100vh - 35px);
+}
+
+.dixel-jumbo-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  @media ($M) {
+    gap: 40px;
+    justify-content: flex-end;
+    padding-bottom: 180px;
+  }
+
+  @media ($XL) {
+    max-width: 1340px;
+    margin: 0 auto;
+    gap: 40px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 50px;
+  }
+}
+
+.dixel-jumbo-pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.dixel-jumbo-title {
+  max-width: 309px;
+  width: fit-content;
+  color: #fff;
+
+  font-family: DOSS;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px; /* 100% */
+
+  @media ($M) {
+    max-width: 401px;
+    font-size: 58px;
+    line-height: 56px; /* 96.552% */
+  }
+
+  @media ($XL) {
+    max-width: 707px;
+    font-size: 100px;
+    line-height: 100%; /* 100px */
+  }
+}
+
+.dixel-jumbo-subtitle {
+  max-width: 309px;
+  width: fit-content;
+  color: #fff;
+  text-align: center;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+
+  @media ($M) {
+    max-width: unset;
+    font-size: 24px;
+    line-height: 120%; /* 28.8px */
+    letter-spacing: -1px;
+  }
+
+  @media ($XL) {
+    font-size: 30px;
+    line-height: 120%; /* 36px */
+  }
+}
+
+.dixel-jumbo-button-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  border-radius: 40px 40px 0px 0px;
+  background: #FFF;
+  padding: 0 12px;
+
+  height: 73px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media ($M) {
+    padding: 0 20px;
+    height: 102px;
+  }
+
+  @media ($XL) {
+    left: unset;
+  }
+}
+
+.dixel-jumbo-button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 36px;
+  border: 3px solid #FFF;
+  background: #EC5532;
+  box-shadow: 0px 0px 40px 0px rgba(13, 15, 17, 0.03);
+
+  color: #FFF;
+  font-feature-settings: 'ss01' on;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: -0.18px;
+  text-decoration: none;
+
+  @media ($M) {
+    padding: 20px 32px;
+    font-size: 24px;
+    line-height: 90%; /* 21.6px */
+    letter-spacing: -1.5px;
+  }
+
+  @media ($XL) {
+
+  }
+}
+
+.dixel-jumbo-button-left-corner {
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+}
+
+.dixel-jumbo-button-right-corner {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+}
