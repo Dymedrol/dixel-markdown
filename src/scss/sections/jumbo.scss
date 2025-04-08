@@ -94,7 +94,7 @@
   margin: auto;
 
   border-radius: 40px 40px 0px 0px;
-  background: #FFF;
+  background: $dixel-background;
   padding: 0 12px;
 
   height: 73px;
@@ -150,10 +150,18 @@
   position: absolute;
   bottom: 0;
   left: -40px;
+
+  & path {
+    fill: $dixel-background;
+  }
 }
 
 .dixel-jumbo-button-right-corner {
   position: absolute;
   bottom: 0;
   right: -40px;
+
+  & path {
+    fill: $dixel-background;
+  }
 }

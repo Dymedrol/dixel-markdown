@@ -13,6 +13,25 @@
   line-height: 56px;
 }
 
+.headline-h3 {
+  /* Desktop/Headline/H3 (44\40) */
+  font-family: DOSS;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.headline-h4 {
+  /* Desktop/Headline/H4 (32\32) */
+  font-family: DOSS;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 100% */
+  letter-spacing: 0.5px;
+}
+
 .mobile-headline-h1 {
   /* Mobile/Headline/H1 (44\32) */
   @media ($mobile_only) {
@@ -24,6 +43,29 @@
   }
 }
 
+.mobile-headline-h2 {
+  /* Mobile/Headline/H2 (32\32) */
+  @media ($mobile_only) {
+    font-family: DOSS;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+
+.mobile-headline-h3 {
+  /* Mobile/Headline/H3 24\24) */
+  @media ($mobile_only) {
+
+    font-family: DOSS;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+  }
+}
+
 .body-1 {
   /* Desktop/Body/Body 1 */
   font-family: Inter;
@@ -32,6 +74,15 @@
   font-weight: 500;
   line-height: 120%; /* 28.8px */
   letter-spacing: -1px;
+}
+
+.body-3 {
+  /* Desktop/Body/Body 3 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 21.6px */
 }
 
 .mobile-body-2 {
