@@ -12,6 +12,7 @@ body {
   }
 
   background-color: $dixel-background;
+  overflow-x: hidden;
 }
 
 .container {
@@ -30,3 +31,4 @@ body {
     padding: 0 70px;
   }
 }
+

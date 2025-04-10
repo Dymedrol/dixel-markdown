@@ -32,6 +32,16 @@
   letter-spacing: 0.5px;
 }
 
+.headline-h5 {
+  /* Desktop/Headline/H5 (24\24) */
+  font-family: DOSS;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+  letter-spacing: 1px;
+}
+
 .mobile-headline-h1 {
   /* Mobile/Headline/H1 (44\32) */
   @media ($mobile_only) {
@@ -74,6 +84,15 @@
   font-weight: 500;
   line-height: 120%; /* 28.8px */
   letter-spacing: -1px;
+}
+
+.body-2 {
+  /* Desktop/Body/Body 2 */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 28px */
 }
 
 .body-3 {

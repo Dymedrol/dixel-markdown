@@ -1,0 +1,90 @@
+.dixel-advantages {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media ($M) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  @media ($XXL) {
+
+  }
+}
+
+.dixel-advantages__title  {
+  margin-bottom: 24px;
+  color: $dixel-blue;
+
+  @media ($M) {
+    margin-bottom: 40px;
+  }
+}
+
+.dixel-advantages-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+  margin: 0 auto;
+
+  overflow-x: hidden;
+
+  @media ($M) {
+    gap: 20px;
+  }
+
+  @media ($XXL) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+  }
+}
+
+.dixel-advantages-card {
+  width: 327px;
+  padding: 24px;
+  flex-shrink: 0;
+
+  border-radius: 40px;
+  background: #FFF;
+  //box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.05), -4px -4px 40px 0px rgba(0, 0, 0, 0.05);
+
+  @media ($M) {
+    width: 380px;
+    padding: 32px;
+  }
+
+  @media ($XXL) {
+    flex-grow: 1;
+  }
+}
+
+.dixel-advantages-card:first-child {
+  margin-left: 16px;
+
+  @media ($M) {
+    margin-left: 40px;
+  }
+
+  @media ($XXL) {
+    margin-left: 0;
+  }
+}
+
+.dixel-advantages-card__pic {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.dixel-advantages-card__title {
+  color: $dixel-blue;
+  margin-bottom: 16px;
+}
+
+.dixel-advantages-card__text {
+  color: $dixel-blue;
+  opacity: .5;
+}
