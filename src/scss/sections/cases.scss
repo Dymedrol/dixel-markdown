@@ -78,6 +78,11 @@
 
     font-size: 16px;
   }
+
+  &:hover {
+    background-color: $dixel-blue;
+    color: #fff;
+  }
 }
 
 .dixel-cases-tab-menu__item:first-child {

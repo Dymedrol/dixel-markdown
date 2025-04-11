@@ -1,0 +1,97 @@
+.dixel-blog-module {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media ($M) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  @media ($XXL) {
+
+  }
+}
+
+.dixel-blog-module-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+
+  @media ($M) {
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+}
+
+.dixel-blog-module__title {
+  color: $dixel-blue;
+}
+
+.dixel-blog-module__button {
+  display: none;
+
+  @media ($M) {
+    display: block;
+  }
+}
+
+.dixel-blog-module-cards {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dixel-blog-module-card {
+  width: 343px;
+  flex-shrink: 0;
+
+  @media ($M) {
+    width: 384px;
+  }
+}
+
+.dixel-blog-module-card-inner {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 100%;
+  height: 240px;
+  padding: 20px;
+  background-color: lightgray;
+
+  @media ($M) {
+    height: 296px;
+  }
+}
+
+.dixel-blog-module-card__title {
+
+}
+
+.dixel-blog-module-card__title__mobile {
+  margin-top: 16px;
+  color: $dixel-blue;
+
+  @media ($XXL) {
+    display: none;
+  }
+}
+
+.dixel-blog-module-card__title__descktop {
+  display: none;
+
+  @media ($XXL) {
+    display: block;
+    color: #fff;
+  }
+}
+
+.dixel-blog-module-card__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
