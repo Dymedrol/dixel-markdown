@@ -59,6 +59,8 @@
   border-radius: 50px;
   background:$dixel-blue;
 
+  cursor: pointer;
+
   @media ($XL) {
     display: none;
   }

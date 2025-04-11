@@ -19,6 +19,12 @@
   @media ($M) {
     margin-bottom: 40px;
   }
+
+  & span {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 400;
+  }
 }
 
 .dixel-advantages-layout {

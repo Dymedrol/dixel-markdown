@@ -19,6 +19,12 @@
   @media ($M) {
 
   }
+
+  & span {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 400;
+  }
 }
 
 .dixel-cases-tab-menu {
@@ -143,6 +149,10 @@
 
 .dixel-cases-card {
   position: relative;
+}
+
+.dixel-cases-card-inner {
+  position: relative;
   width: 320px;
   height: 420px;
 
@@ -151,12 +161,28 @@
 
   background-color: lightgray;
 
+  mask-image: url("../images/cases-mask-mobile.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+
   @media ($M) {
     width: 440px;
     height: 680px;
+    mask-image: url("../images/cases-mask.svg");
 
     padding: 40px 72px 40px 40px;
   }
+}
+
+.dixel-cases-card__pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .dixel-cases-card__title {

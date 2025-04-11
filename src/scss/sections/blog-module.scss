@@ -26,6 +26,12 @@
 
 .dixel-blog-module__title {
   color: $dixel-blue;
+
+  & span {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 400;
+  }
 }
 
 .dixel-blog-module__button {
