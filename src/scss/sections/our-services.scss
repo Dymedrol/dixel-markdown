@@ -46,8 +46,9 @@
 
 .dixel-our-services-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
+  overflow-x: hidden;
 
   @media ($XXL) {
     flex-direction: row;
@@ -57,23 +58,31 @@
 
 .dixel-our-services-card {
   position: relative;
-  min-height: 300px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.dixel-our-services-card-inner {
+  position: relative;
+  width: 300px;
+  height: 510px;
   padding: 8px 8px 110px 8px;
   background-color: #fff;
   box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.05), -4px -4px 40px 0px rgba(0, 0, 0, 0.05);
-  mask-image: url('../images/our-services-mask.svg');
+  mask-image: url('../images/our-services-mask-mobile.png');
   mask-repeat: no-repeat;
   mask-size: cover;
 
 
   @media ($M) {
     padding: 16px 67px 16px 16px;
+    width: 590px;
     height: 300px;
     mask-image: url('../images/our-services-mask.svg');
   }
 
   @media ($XXL) {
-    width: calc(50% - 10px);
+    //width: calc(50% - 10px);
   }
 }
 

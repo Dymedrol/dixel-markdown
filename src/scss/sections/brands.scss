@@ -1,12 +1,15 @@
 .dixel-brands {
   padding-top: 67px;
+  padding-bottom: 20px;
 
   @media ($M) {
-
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 
   @media ($XXL) {
     padding-top: 172px;
+    padding-bottom: 52px;
   }
 }
 

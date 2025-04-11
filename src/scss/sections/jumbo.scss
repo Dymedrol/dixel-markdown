@@ -19,8 +19,9 @@
     padding-bottom: 180px;
   }
 
-  @media ($XL) {
+  @media ($XXL) {
     max-width: 1340px;
+    padding: 0 40px;
     margin: 0 auto;
     gap: 40px;
     justify-content: flex-end;
