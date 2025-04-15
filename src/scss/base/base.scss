@@ -11,7 +11,7 @@ body {
     content: '';
   }
 
-  background-color: $dixel-background;
+  background-color: $dixel-blue;
   overflow-x: hidden;
 }
 
@@ -29,6 +29,15 @@ body {
     width: 100%;
     max-width: 1340px;
     padding: 0 70px;
+  }
+}
+
+.dixel-main {
+  background-color: $dixel-background;
+  border-radius: 0px 0px 32px 32px;
+
+  @media ($M) {
+    border-radius: 0px 0px 40px 40px;
   }
 }
 

@@ -86,10 +86,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 64px;
+  gap: 50px;
   width: 1071px;
 
   @media ($M) {
+    gap: 64px;
     align-content: center;
     gap: 50px 75px;
     flex-wrap: wrap;

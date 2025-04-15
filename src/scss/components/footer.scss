@@ -90,7 +90,9 @@
 }
 
 .dixel-footer__text1 {
+  font-feature-settings: 'ss01' on;
   margin-bottom: 40px;
+  font-weight: 400;
 
   @media ($M) {
     margin-bottom: 56px;
@@ -99,6 +101,8 @@
 
 .dixel-footer__text2 {
   margin-bottom: 8px;
+  font-feature-settings: 'ss01' on;
+  font-weight: 400;
 
   @media ($M) {
     margin-bottom: 16px;
@@ -167,10 +171,13 @@
 .dixel-footer-block2-menu__link {
   color: #FFF;
   text-decoration: none;
+  font-feature-settings: 'ss01' on;
 }
 
 .dixel-footer-block2-menu__text {
   color: #fff;
+  font-feature-settings: 'ss01' on;
+  font-weight: 400;
 }
 
 .dixel-footer-block2-menu__socials {
@@ -211,6 +218,11 @@
 .dixel-footer-bottom-link {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
+  font-feature-settings: 'ss01' on;
+
+  @media ($M) {
+    order: 2;
+  }
 }
 
 .dixel-footer-button {
@@ -223,4 +235,16 @@
   background-color: $dixel-light-blue;
 
   cursor: pointer;
+
+  @media ($M) {
+    order: 3;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.dixel-footer-copy {
+  @media ($M) {
+    order: 1;
+  }
 }

@@ -40,6 +40,11 @@
   }
 }
 
+.dixel-header-logo-link {
+  display: block;
+  font-size: 0;
+}
+
 .dixel-header-logo {
   width: 57px;
   height: 22.801px;
@@ -185,6 +190,10 @@
   line-height: 125%; /* 20px */
   letter-spacing: -0.5px;
   text-decoration: none;
+
+  &:hover {
+    opacity: .7;
+  }
 }
 
 .dixel-header-cta {
@@ -212,6 +221,16 @@
 
   @media ($XL) {
     display: flex;
+  }
+
+  &:hover {
+    background-color: $dixel-light-blue;
+    color: $dixel-blue;
+    border-color: $dixel-light-blue;
+
+    & path {
+      stroke: $dixel-blue
+    }
   }
 }
 

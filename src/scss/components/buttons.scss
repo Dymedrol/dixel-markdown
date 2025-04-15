@@ -130,12 +130,21 @@
   background-color: $dixel-orange;
   border-radius: 50%;
 
+  & svg {
+    transition: all 0.2s ease-out;
+  }
+
+
   & path {
     stroke: #fff;
   }
 
   &:hover {
     background-color: $dixel-light-blue;
+
+    & svg {
+      transform: translateX(3px);
+    }
 
     & path {
       stroke: $dixel-blue;
@@ -160,12 +169,22 @@
   background-color: $dixel-light-blue;
   border-radius: 50%;
 
+  & svg {
+    transition: all 0.2s ease-out;
+  }
+
+
   & path {
     stroke: $dixel-blue;
   }
 
   &:hover {
     background-color: $dixel-orange;
+
+    & svg {
+      transform: translateX(3px);
+    }
+
 
     & path {
       stroke: #fff;
