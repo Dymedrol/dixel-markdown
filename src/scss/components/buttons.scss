@@ -168,6 +168,7 @@
   align-items: center;
   background-color: $dixel-light-blue;
   border-radius: 50%;
+  cursor: pointer;
 
   & svg {
     transition: all 0.2s ease-out;
@@ -199,5 +200,17 @@
   &.size-m {
     width: 48px;
     height: 48px;
+  }
+
+  &.reverse {
+    & svg {
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      & svg {
+        transform: rotate(180deg) translateX(3px);
+      }
+    }
   }
 }
