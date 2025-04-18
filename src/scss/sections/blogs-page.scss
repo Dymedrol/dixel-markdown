@@ -1,4 +1,4 @@
-.dixel-our-cases {
+.dixel-blogs-page {
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -12,13 +12,43 @@
   }
 }
 
-.dixel-our-cases-title {
-  margin-bottom: 32px;
-  color: $dixel-blue;
+.dixel-blogs-page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
-  @media ($M) {
+  margin-bottom: 28px;
+
+  @media ($XXL) {
 
   }
+}
+
+.dixel-blogs-page-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dixel-blogs-page-bubble {
+  display: flex;
+  height: 50px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+
+  color: #251B4C;
+  font-feature-settings: 'ss01' on;
+}
+
+
+
+.dixel-blogs-page-title {
+  color: $dixel-blue;
 
   & span {
     font-family: "SF Pro";
@@ -27,9 +57,10 @@
   }
 }
 
-.dixel-our-cases-tab-menu {
+.dixel-blogs-page-tab-menu {
   display: flex;
   align-items: center;
+  width: fit-content;
   gap: 6px;
   overflow-x: scroll;
   max-width: 1200px;
@@ -38,7 +69,7 @@
 
   @media ($M) {
     gap: 12px;
-    margin-bottom: 31px;
+    margin-bottom: 44px;
   }
 
   @media ($XXL) {
@@ -47,17 +78,17 @@
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.dixel-our-cases-tab-menu::-webkit-scrollbar {
+.dixel-blogs-page-tab-menu::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.dixel-our-cases-tab-menu {
+.dixel-blogs-page-tab-menu {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
-.dixel-our-cases-tab-menu__item {
+.dixel-blogs-page-tab-menu__item {
   display: flex;
   flex-shrink: 0;
   height: 42px;
@@ -91,45 +122,32 @@
   }
 }
 
-.dixel-our-cases-tab-menu__item:first-child {
-  margin-left: 16px;
-
-  @media ($M) {
-    margin-left: 40px;
-  }
-
-  @media ($XXL) {
-    margin-left: 0;
-  }
-}
-
-.dixel-our-cases-tab-menu__item_active {
+.dixel-blogs-page-tab-menu__item_active {
   background-color: $dixel-blue;
   color: #fff;
 }
 
-.dixel-our-cases-cards {
+.dixel-blogs-page-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 32px;
+
   margin-bottom: 24px;
 
   @media ($M) {
     gap: 40px;
+    margin-bottom: 40px;
   }
 
   @media ($XXL) {
-    max-width: 1200px;
-    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 60px 60px;
-    margin-bottom: 40px;
+    gap: 64px 20px;
   }
 }
 
-.dixel-our-cases-card {
+.dixel-blogs-page-card {
   width: 343px;
   flex-shrink: 0;
 
@@ -138,11 +156,11 @@
   }
 }
 
-.dixel-our-cases-card-wrapper {
+.dixel-blogs-page-card-wrapper {
   position: relative;
 }
 
-.dixel-our-cases-card-inner {
+.dixel-blogs-page-card-inner {
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -160,7 +178,7 @@
   }
 }
 
-.dixel-our-cases-card__pic {
+.dixel-blogs-page-card__pic {
   position: absolute;
   top:0;
   left: 0;
@@ -169,7 +187,51 @@
   object-fit: cover;
 }
 
-.dixel-our-cases-card__title {
+.dixel-blogs-page-card__tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  border-radius: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: #FFF;
+  padding: 8px 12px;
+
+  color: $dixel-blue;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 18.9px */
+
+  @media ($M) {
+    top: 24px;
+    left: 24px;
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
+
+.dixel-blogs-page-card__read-time {
+  position: absolute;
+  top: 24px;
+  right: 15px;
+
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 18.9px */
+
+  @media ($M) {
+    top: 236x;
+    right: 24px;
+    font-size: 16px;
+  }
+}
+
+.dixel-blogs-page-card__title {
   margin-top: 16px;
   margin-bottom: 8px;
   color: $dixel-blue;
@@ -180,19 +242,19 @@
   }
 }
 
-.dixel-our-cases-card-info {
+.dixel-blogs-page-card-info {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.dixel-our-cases-card-info__adres {
+.dixel-blogs-page-card-info__adres {
   color: $dixel-blue;
   font-feature-settings: 'ss01' on;
   opacity: 0.7;
 }
 
-.dixel-our-cases-card-info__price {
+.dixel-blogs-page-card-info__price {
   color: $dixel-blue;
   font-family: Inter;
   font-size: 16px;
@@ -206,13 +268,13 @@
   }
 }
 
-.dixel-our-cases-card__button {
+.dixel-blogs-page-card__button {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.dixel-our-cases-pagintation {
+.dixel-blogs-page-pagintation {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -228,7 +290,7 @@
   }
 }
 
-.dixel-our-cases-pagintation-digits {
+.dixel-blogs-page-pagintation-digits {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -242,7 +304,7 @@
   }
 }
 
-.dixel-our-cases-pagintation-digits__item {
+.dixel-blogs-page-pagintation-digits__item {
   color: rgba(13, 15, 17, 0.50);
   font-family: Inter;
   font-size: 16px;
@@ -251,6 +313,8 @@
   line-height: 135%; /* 21.6px */
 }
 
-.dixel-our-cases-pagintation-digits__item__active {
+.dixel-blogs-page-pagintation-digits__item__active {
   color: $dixel-blue;
 }
+
+

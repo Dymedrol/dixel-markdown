@@ -1,0 +1,254 @@
+.dixel-contact-us {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media ($M) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  @media ($XXL) {
+
+  }
+}
+
+.dixel-contact-us__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 16px 16px 16px;
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.10);
+  background: $dixel-blue;
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.05), -4px -4px 40px 0px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+
+  @media ($M) {
+    gap: 40px;
+    padding: 32px;
+    border-radius: 32px;
+    border: 6px solid rgba(255, 255, 255, 0.10);
+    box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.05), -4px -4px 40px 0px rgba(0, 0, 0, 0.05);
+  }
+
+  @media ($XXL) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.dixel-contact-us_bg {
+  display: none;
+
+  @media ($XXL) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.dixel-contact-us-col1 {
+  z-index: 1;
+  @media ($XXL) {
+    width: 565px;
+  }
+}
+
+.dixel-contact-us-col2 {
+  z-index: 1;
+  @media ($XXL) {
+    width: 400px;
+  }
+}
+
+.dixel-contact-us__circle {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.10);
+
+  margin-bottom: 24px;
+
+  @media ($M) {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 40px;
+  }
+
+  @media ($XXL) {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 64px;
+  }
+
+  & svg {
+    width: 16px;
+    height: 16px;
+
+    @media ($M) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media ($XXL) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+.dixel-contact-us__title-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  margin-bottom: 12px;
+
+  @media ($M) {
+    margin-bottom: 20px;
+    gap: 12px;
+  }
+
+  @media ($XXL) {
+    margin-bottom: 32px;
+  }
+}
+
+.dixel-contact-us__title {
+  color: #FFFFFF;
+
+  @media ($XXL) {
+    font-size: 58px;
+    line-height: 56px;
+  }
+
+  & strong  {
+    color: $dixel-orange;
+  }
+
+  & span {
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+.dixel-contact-us__text {
+  color: #FFFFFF;
+  font-feature-settings: 'ss01' on;
+  opacity: 0.8;
+  font-weight: 300 !important;
+}
+
+.dixel-contact-us__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 11px  16px 11px 14px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(171, 172, 171, 0.30);
+  background: #FFFFFF;
+
+  color: rgba(37, 27, 76, 0.60);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+
+  @media ($M) {
+    margin-bottom: 12px;
+  }
+
+  @media ($XXL) {
+
+  }
+}
+
+.dixel-contact-us__textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 8px;
+  padding: 11px  16px 11px 14px;
+
+  border-radius: 20px;
+  border: 1px solid rgba(171, 172, 171, 0.30);
+  background: #FFFFFF;
+
+  color: rgba(37, 27, 76, 0.60);
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+
+  @media ($M) {
+    height: 120px;
+    margin-bottom: 12px;
+  }
+
+  @media ($XXL) {
+
+  }
+}
+
+.dixel-contact-us-checkbox-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-left: 12px;
+  margin-bottom: 35px;
+}
+
+.dixel-contact-us-checkbox-label {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.dixel-contact-us-checkbox-label input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+}
+
+.dixel-contact-us-checkbox-square {
+  width: 24px;
+  height: 24px;
+}
+
+.dixel-contact-us-checkbox-square_checked {
+  display: none;
+  width: 24px;
+  height: 24px;
+}
+
+.dixel-contact-us-checkbox-label input:checked {
+  & ~ .dixel-contact-us-checkbox-square {
+    display: none;
+  }
+
+  & ~ .dixel-contact-us-checkbox-square_checked {
+    display: block;
+  }
+}
+
+.dixel-contact-us-checkbox-text {
+  color: #FFF;
+  font-feature-settings: 'ss01' on;
+}
+
+.dixel-contact-us__button {
+  width: 100%;
+  text-align: center;
+}
