@@ -3,14 +3,6 @@
 }
 
 body {
-  &:before {
-    display: block;
-    width: 100%;
-    height: 35px;
-    background-color: $dixel-blue;
-    content: '';
-  }
-
   background-color: $dixel-blue;
   overflow-x: hidden;
 }
@@ -35,9 +27,15 @@ body {
 .dixel-main {
   background-color: $dixel-background;
   border-radius: 0px 0px 32px 32px;
+  padding-top: 105px;
 
   @media ($M) {
     border-radius: 0px 0px 40px 40px;
+    padding-top: 140px;
+  }
+
+  @media ($XXL) {
+    padding-top: 104px;
   }
 }
 

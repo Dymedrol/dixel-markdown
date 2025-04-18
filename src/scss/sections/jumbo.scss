@@ -1,6 +1,6 @@
 .dixel-jumbo {
   position: relative;
-  height: calc(100vh - 35px);
+  height: 100vh;
 }
 
 .dixel-jumbo-inner {
@@ -12,11 +12,13 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
+  margin-top: -105px;
 
   @media ($M) {
     gap: 40px;
     justify-content: flex-end;
     padding-bottom: 180px;
+    margin-top: - 140px;;
   }
 
   @media ($XXL) {
@@ -27,6 +29,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     padding-bottom: 50px;
+    margin-top: -104px;
   }
 }
 
