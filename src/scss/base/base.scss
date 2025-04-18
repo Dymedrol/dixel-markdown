@@ -41,3 +41,19 @@ body {
   }
 }
 
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: fit-content;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.control-item {
+  color: #251b4c;
+}
+
