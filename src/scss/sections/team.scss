@@ -1,0 +1,82 @@
+.dixel-team {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media ($M) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  @media ($XXL) {
+
+  }
+}
+
+.dixel-client-say__title {
+  color: $dixel-blue;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @media ($M) {
+    margin-bottom: 40px;
+  }
+
+  @media ($XXL) {
+
+  }
+}
+
+.dixel-team-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media ($M) {
+    margin-bottom: 40px;
+  }
+
+  @media ($XXL) {
+    flex-wrap: wrap;
+
+  }
+}
+
+.dixel-team-card {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+  min-height: 242px;
+  padding: 32px;
+  border-radius: 40px;
+  background: #FFF;
+  flex-shrink: 0;
+  //box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.05), -4px -4px 40px 0px rgba(0, 0, 0, 0.05);
+}
+
+.dixel-team-card__title {
+  color: $dixel-blue;
+  margin-bottom: 8px;
+
+  & span  {
+    font-family: "SF Pro";
+  }
+}
+
+.dixel-team-card__job {
+  color: $dixel-blue;
+  font-feature-settings: 'ss01' on;
+  opacity: 0.5;
+  margin-bottom: 24px;
+}
+
+.dixel-team-card__foto {
+  margin-left: auto;
+  margin-top: auto;
+  width: 86px;
+  height: 86px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: -1px 0px 1px 0px rgba(255, 255, 255, 0.20) inset;
+}
