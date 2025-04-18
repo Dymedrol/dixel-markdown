@@ -402,6 +402,10 @@
 .dixel-services-page-info__cta {
   width: 100%;
   text-align: center;
+
+  @media ($XXL) {
+    margin-top: auto;
+  }
 }
 
 .dixel-services-page-pic {
