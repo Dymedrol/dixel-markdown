@@ -1,0 +1,25 @@
+.dexel-404 {
+  position: relative;
+  height: calc(100vh - 105px);
+  background: url("/images/404-bg.svg");
+  background-repeat: repeat;
+
+  @media ($M) {
+    height: calc(100vh - 140px);
+  }
+
+  @media ($XXL) {
+    height: calc(100vh - 104px);
+  }
+}
+
+.dexel-404-btn {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
