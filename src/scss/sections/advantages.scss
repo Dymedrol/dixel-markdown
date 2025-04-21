@@ -44,6 +44,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 1200px;
+    overflow-x: visible;
   }
 }
 
@@ -54,7 +55,7 @@
 
   border-radius: 40px;
   background: #FFF;
-  //box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.05), -4px -4px 40px 0px rgba(0, 0, 0, 0.05);
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.1));
 
   @media ($M) {
     width: 380px;
