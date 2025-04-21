@@ -1,0 +1,114 @@
+.dixel-docs {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media ($M) {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  @media ($XXL) {
+
+  }
+}
+
+.dixel-docs-wrapper {
+  width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+
+  @media ($M) {
+    width: 640px;
+    padding: 0;
+  }
+
+  @media ($XXL) {
+    width: 800px;
+  }
+}
+
+.dixel-docs-header {
+  margin-bottom: 80px;
+}
+
+.dixel-docs__title {
+  color: $dixel-blue;
+  margin-bottom: 20px;
+
+  @media ($M) {
+    margin-bottom: 24px;
+  }
+}
+
+.dixel-docs__subtitle {
+  color: $dixel-blue;
+  font-feature-settings: 'ss01' on;
+  opacity: 0.5;
+}
+
+.dixel-docs-content {
+  & p {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    color: $dixel-blue;
+
+    margin-bottom: 20px;
+
+    @media ($M) {
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%; /* 28px */
+
+      margin-bottom: 30px;
+    }
+  }
+
+  & h3 {
+    color: $dixel-blue;
+    font-family: DOSS;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin-bottom: 20px;
+
+    @media ($M) {
+      font-family: DOSS;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.5px;
+
+      margin-bottom: 30px;
+    }
+  }
+
+  & h4 {
+    color: $dixel-blue;
+    font-family: DOSS;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+    @media ($M) {
+      font-family: DOSS;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 1px;
+
+
+      margin-bottom: 30px;
+    }
+  }
+}
